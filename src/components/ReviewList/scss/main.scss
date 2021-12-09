@@ -1,0 +1,27 @@
+    .b-reviews {
+        & {
+            margin: 20px 0;
+        }
+        .reviews__title {
+            @include title-1;
+            text-align: center;
+            margin: 35px 0;
+        }
+        .reviews__inner {
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+@media (max-width: $md) {
+    .b-reviews {
+        & {
+            min-width: 450px;
+            width: 100%;
+            padding: 0 20px;
+        }
+        .reviews__inner {
+            max-width: 100%;
+        }
+    }
+}

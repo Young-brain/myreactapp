@@ -1,0 +1,27 @@
+.b-grade {
+    .grade__action{ 
+        & {
+            border-bottom:none;
+            text-decoration: none;
+        }
+        &:hover .grade__icon {
+            fill: #cb11ab;
+            transition: fill .3s;
+        }
+        &:not(:last-child) {
+            margin-right:10px;
+        }
+        &:hover {
+            color: #cb11ab;
+            transition: color .3s;
+        }
+        .grade__likebox--dislike svg {
+            transform: rotate(180deg);
+        }
+        .grade__likebox {
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+
+}

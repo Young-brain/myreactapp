@@ -1,0 +1,11 @@
+// common
+@import './common/reset.scss';
+@import './common/fonts.scss';
+@import './common/common.scss';
+
+
+// components
+@import '../components/Rating/scss/main.scss';
+@import '../components/Grade/scss/main.scss';
+@import '../components/ReviewItem/scss/main.scss';
+@import '../components/ReviewList/scss/main.scss';

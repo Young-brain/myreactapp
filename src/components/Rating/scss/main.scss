@@ -1,0 +1,21 @@
+.b-rating {
+    display: inline-block;
+    width: 100px;
+    height: 20px;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}
+.rating--star1 {
+    background-position-x: calc(4 * 20%);
+}
+.rating--star2 {
+    background-position-x: calc(3 * 20%);
+}
+.rating--star3 {
+    background-position-x: calc(2 * 20%);
+}
+.rating--star4 {
+    background-position-x: calc(1 * 20%);
+}
