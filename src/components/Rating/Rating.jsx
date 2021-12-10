@@ -1,4 +1,4 @@
-import cn from 'classnames'
+import cn from 'classnames';
 
 function Rating(props) {
   const {stars} = props.props;
