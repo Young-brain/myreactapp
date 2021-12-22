@@ -1,25 +1,15 @@
 import cn from 'classnames';
 
 function Rating(props) {
-  const {stars} = props.props;
-  const mainClass = 'b-rating';
-  let starsClass;
-    switch (stars) {
-    case 1:
-      starsClass = cn(mainClass, 'rating--star4');
-      break;
-    case 2:
-      starsClass = cn(mainClass, 'rating--star3');
-      break;
-    case 3:
-      starsClass = cn(mainClass, 'rating--star2');
-      break;
-    case 4:
-      starsClass = cn(mainClass, 'rating--star1');
-      break;
-    }
+  const {stars} = props.stars;
+  
   return (
-    <div className={starsClass}></div>
+    <div className={cn('b-rating', 
+      {'rating--star4': stars === 1},
+      {'rating--star3': stars === 2},
+      {'rating--star2': stars === 3},
+      {'rating--star1': stars === 4},
+    )}></div>
   );
 }
 

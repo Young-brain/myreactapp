@@ -1,5 +1,5 @@
 function Grade(props) {
-  const {like, dislike} = props.props;
+  const {like, dislike} = props.grade;
   return (
     <div className="b-grade">
     <a className="grade__action" href="#">

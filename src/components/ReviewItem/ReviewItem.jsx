@@ -9,7 +9,8 @@ function ReviewItem(props) {
         time,
         color,
         textReview,
-            } = props.items;
+        ...rest
+            } = props.item;
     return (
         <div className="b-review-item">
             <div className="review-item__photo">
@@ -21,7 +22,7 @@ function ReviewItem(props) {
                 <span className="review-item__date"><span>{date} </span><span>{time}</span></span>
             </div>
             <div className="review-item__wrap">
-                <Rating props={props.items} />
+                <Rating stars={rest} />
                 <span className="review-item__color"><span>Цвет: </span><span>{color}</span></span>
             </div>
             <div className="review-item__text">
@@ -33,7 +34,7 @@ function ReviewItem(props) {
                 <a className="review-item__complaint review-item__complaint--mobile" href="#"></a>
                 <a className="review-item__answer" href="#">Ответить</a>
                 </div>
-                <Grade props={props.items} />
+                <Grade grade={rest} />
             </div>
             </div>
         </div>
